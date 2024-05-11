@@ -1,0 +1,57 @@
+@charset 'utf-8';
+/*
+  Theme Name: Alanzo Child
+  Theme URI: http://alanzo.ancorathemes.com/
+  Description: Alanzo - Multipurpose and Multiskin Responsive Wordpress theme
+  Author: AncoraThemes
+  Author URI: http://ancorathemes.com/
+  Template: alanzo
+  Version: 1.0
+  Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, microformats, post-formats, theme-options, threaded-comments, translation-ready
+  Text Domain:  alanzo
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.services_single .services_page_header {
+  display: none;
+}
+
+div.wpforms-container-full .wpforms-form input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"],
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  width: 30%;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+input.wpcf7-form-control.wpcf7-date.wpcf7-validates-as-required.wpcf7-validates-as-date {
+  background-color: rgba(14, 13, 18, 0);
+  border-color: #31322f;
+  color: #b7b7b7;
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid;
+  padding-left: 0;
+}
+.scheme_default input[type="radio"] + label:before,
+.scheme_default input[type="checkbox"] + label:before {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  display: none !important;
+}
+figure.swiper-slide-inner img {
+  height: 444px !important;
+}
+@media only screen and (max-width: 767px) {
+  figure.swiper-slide-inner img {
+    height: 300px !important;
+  }
+}
