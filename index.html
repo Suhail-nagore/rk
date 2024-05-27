@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="profile" href="//gmpg.org/xfn/11">
@@ -11,6 +12,7 @@
 
 	<!-- This site is optimized with the Yoast SEO plugin v22.6 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Home - RK Catering</title>
+	
 
 	<meta property="og:locale" content="en_GB" />
 	<meta property="og:type" content="website" />
@@ -2564,6 +2566,7 @@
 	<style type="text/css">
 		/** Mega Menu CSS: fs **/
 	</style>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body data-rsssl=1
@@ -5118,149 +5121,48 @@
 																			aria-atomic="true"></p>
 																		<ul></ul>
 																	</div>
-																	<form action="/#wpcf7-f1207-o1" method="post"
-																		class="wpcf7-form init"
-																		aria-label="Contact form"
-																		novalidate="novalidate" data-status="init">
-																		<div style="display: none;">
-																			<input type="hidden" name="_wpcf7"
-																				value="1207" />
-																			<input type="hidden" name="_wpcf7_version"
-																				value="5.9.4" />
-																			<input type="hidden" name="_wpcf7_locale"
-																				value="en_US" />
-																			<input type="hidden" name="_wpcf7_unit_tag"
-																				value="wpcf7-f1207-o1" />
-																			<input type="hidden"
-																				name="_wpcf7_container_post"
-																				value="0" />
-																			<input type="hidden"
-																				name="_wpcf7_posted_data_hash"
-																				value="" />
-																		</div>
-																		<div
-																			class="sc_form_details trx_addons_columns_wrap">
-																			<div class="trx_addons_column-1_2">
-																				<p><label
-																						class="wpcf7-validates-as-required"><span
-																							class="wpcf7-form-control-wrap"
-																							data-name="fullname"><input
-																								size="40"
-																								class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																								aria-required="true"
-																								aria-invalid="false"
-																								placeholder="Full Name*"
-																								value="" type="text"
-																								name="fullname" /></span></label>
-																				</p>
+																	<div class="container mt-5">
+																		<h2>Contact Form</h2>
+																		<form action="./submit.php" method="post" novalidate>
+																			<div class="form-row">
+																				<div class="form-group col-md-6">
+																					<label for="fullname">Full Name*</label>
+																					<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name" required>
+																				</div>
+																				<div class="form-group col-md-6">
+																					<label for="email">E-mail*</label>
+																					<input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+																				</div>
 																			</div>
-																			<div class="trx_addons_column-1_2">
-																				<p><label
-																						class="wpcf7-validates-as-required"><span
-																							class="wpcf7-form-control-wrap"
-																							data-name="email"><input
-																								size="40"
-																								class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-																								aria-required="true"
-																								aria-invalid="false"
-																								placeholder="E-mail*"
-																								value="" type="email"
-																								name="email" /></span></label>
-																				</p>
+																			<div class="form-row">
+																				<div class="form-group col-md-6">
+																					<label for="phone">Phone*</label>
+																					<input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+																				</div>
+																				<div class="form-group col-md-6">
+																					<label for="city">City*</label>
+																					<input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+																				</div>
 																			</div>
-																			<div class="trx_addons_column-1_2">
-																				<p><label
-																						class="wpcf7-validates-as-required"><span
-																							class="wpcf7-form-control-wrap"
-																							data-name="phone"><input
-																								size="40"
-																								class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																								aria-required="true"
-																								aria-invalid="false"
-																								placeholder="Phone*"
-																								value="" type="text"
-																								name="phone" /></span></label>
-																				</p>
+																			<div class="form-row">
+																				<div class="form-group col-md-6">
+																					<label for="no-of-guests">No of Guests*</label>
+																					<input type="text" class="form-control" id="no-of-guests" name="no-of-guests" placeholder="No of Guests" required>
+																				</div>
+																				<div class="form-group col-md-6">
+																					<label for="event-type">Event Type*</label>
+																					<input type="text" class="form-control" id="event-type" name="event-type" placeholder="Event Type" required>
+																				</div>
 																			</div>
-																			<div class="trx_addons_column-1_2">
-																				<p><label
-																						class="wpcf7-validates-as-required"><span
-																							class="wpcf7-form-control-wrap"
-																							data-name="city"><input
-																								size="40"
-																								class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																								aria-required="true"
-																								aria-invalid="false"
-																								placeholder="City*"
-																								value="" type="text"
-																								name="city" /></span></label>
-																				</p>
+																			<div class="form-row">
+																				<div class="form-group col-md-6">
+																					<label for="date-of-event">Date of Event*</label>
+																					<input type="date" class="form-control" id="date-of-event" name="date-of-event" required>
+																				</div>
 																			</div>
-																			<div class="trx_addons_column-1_2">
-																				<p><label
-																						class="wpcf7-validates-as-required"><span
-																							class="wpcf7-form-control-wrap"
-																							data-name="no-of-guests"><input
-																								size="40"
-																								class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																								aria-required="true"
-																								aria-invalid="false"
-																								placeholder="No of Guests*"
-																								value="" type="text"
-																								name="no-of-guests" /></span></label>
-																				</p>
-																			</div>
-																			<div class="trx_addons_column-1_2">
-																				<p><label
-																						class="wpcf7-validates-as-required"><span
-																							class="wpcf7-form-control-wrap"
-																							data-name="event-type"><input
-																								size="40"
-																								class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																								aria-required="true"
-																								aria-invalid="false"
-																								placeholder="Event Type*"
-																								value="" type="text"
-																								name="event-type" /></span></label>
-																				</p>
-																			</div>
-																			<div class="trx_addons_column-1_2">
-																				<p id="dat"><br />
-																					Date of Event*
-																				</p>
-																				<p><span class="wpcf7-form-control-wrap"
-																						data-name="date-of-event"><input
-																							class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date"
-																							id="date-of-event"
-																							aria-required="true"
-																							aria-invalid="false"
-																							placeholder="Date of Event*"
-																							value="" type="date"
-																							name="date-of-event" /></span>
-																				</p>
-																			</div>
-																			<div
-																				class="trx_addons_column-1 form-submit">
-																				<p><input
-																						class="wpcf7-form-control wpcf7-submit has-spinner color_style_dark sc_button sc_button_size_small"
-																						type="submit" value="Submit" />
-																				</p>
-																			</div>
-																		</div>
-																		<p style="display: none !important;"
-																			class="akismet-fields-container"
-																			data-prefix="_wpcf7_ak_">
-																			<label>&#916;<textarea
-																					name="_wpcf7_ak_hp_textarea"
-																					cols="45" rows="8"
-																					maxlength="100"></textarea></label><input
-																				type="hidden" id="ak_js_1"
-																				name="_wpcf7_ak_js" value="184" />
-																			<script>document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());</script>
-																		</p>
-																		<div class="wpcf7-response-output"
-																			aria-hidden="true"></div>
-																	</form>
+																			<button type="submit" class="btn btn-primary mt-2">Submit</button>
+																		</form>
+																	</div>
 																</div>
 
 
@@ -5504,6 +5406,10 @@
 
 	</div><!-- /.body_wrap -->
 
+
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 	<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up"
 		title="Scroll to top"></a><!-- Global site tag (gtag.js) - Google Analytics -->
